@@ -6,14 +6,3 @@ field:
   mappings:
     name: '[cas:attribute:givenName] [cas:attribute:surname]'
     mail: '[cas:attribute:osuprimarymail]'
-role:
-  sync_frequency: 2
-  deny_login_no_match: false
-  deny_registration_no_match: false
-  mappings:
-    - rid: dx_administrator
-      attribute: entitlement_drupal
-      value: 'urn:mace:oregonstate.edu:entitlement:drupal-admin'
-      method: exact_any
-      negate: false
-      remove_without_match: true
