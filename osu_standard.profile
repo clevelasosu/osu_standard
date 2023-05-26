@@ -7,12 +7,12 @@ use Drupal\Core\Form\FormStateInterface;
  */
 function osu_standard_form_install_configure_form_alter(&$form, FormStateInterface $formState) {
   // Set some placeholder text for this.
-  $form['site_information']['site_mail']['#default_value'] = 'noreply@mail.drupal.oregonstate.edu';
+  $form['site_information']['site_mail']['#default_value'] = 'webmaster@engr.oregonstate.edu';
   $form['site_information']['site_name']['#attributes']['placeholder'] = t('OSU Site');
 
   // Account information defaults.
-  $form['admin_account']['account']['name']['#default_value'] = 'cws_dpla';
-  $form['admin_account']['account']['mail']['#default_value'] = 'noreply@mail.drupal.oregonstate.edu';
+  $form['admin_account']['account']['name']['#default_value'] = 'coe_admin';
+  $form['admin_account']['account']['mail']['#default_value'] = 'webmaster@engr.oregonstate.edu';
 
   // Date/time settings.
   $form['regional_settings']['site_default_country']['#default_value'] = 'US';
