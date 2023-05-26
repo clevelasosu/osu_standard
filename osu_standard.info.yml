@@ -51,8 +51,6 @@ dependencies:
   - views
   - views_ui
   # Contrib Modules
-  - acquia_connector
-  - acquia_purge
   - address
   - admin_toolbar
   - admin_toolbar_tools
